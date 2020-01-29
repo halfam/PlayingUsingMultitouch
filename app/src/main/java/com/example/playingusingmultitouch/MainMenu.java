@@ -1,5 +1,6 @@
 package com.example.playingusingmultitouch;
 
+import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -22,6 +23,11 @@ public class MainMenu extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            return true;
+        }
+        if (id == R.id.op2) {
+            Intent intent = new Intent(this, MyFirstPingPongActivity.class);
+            startActivity(intent);
             return true;
         }
 
